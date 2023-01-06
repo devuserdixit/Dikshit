@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Personal Details"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/edtFName"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:hint="Please Enter Your First Name"
+        android:padding="10dp"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/edtLName"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:hint="Please Enter Your Last Name"
+        android:padding="10dp"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/edtNumber"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:hint="Please Enter Your Number"
+        android:padding="10dp"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:hint="Please Enter Your E-mail"
+        android:padding="10dp"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/edtAddress"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:hint="Please Enter Your Address"
+        android:padding="10dp"
+        android:textSize="22sp" />
+
+    <RadioGroup
+        android:id="@+id/rgGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+    <RadioButton
+        android:id="@+id/rbMale"
+        android:layout_width="match_parent"
+        android:text="Male"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:textSize="22sp"/>
+
+        <RadioButton
+            android:id="@+id/rbFemale"
+            android:layout_width="match_parent"
+            android:text="Female"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:textSize="22sp"/>
+
+        <RadioButton
+            android:id="@+id/rbOther"
+            android:layout_width="match_parent"
+            android:text="Other"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:textSize="22sp"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:weightSum="3">
+
+        <CheckBox
+            android:id="@+id/chkJourney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Journey"
+            android:layout_weight="1"
+            android:textSize="22sp"/>
+
+        <CheckBox
+            android:id="@+id/chkSpeaking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Speaking"
+            android:layout_weight="1"
+            android:textSize="22sp"/>
+
+        <CheckBox
+            android:id="@+id/chkWriting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Writing"
+            android:layout_weight="1"
+            android:textSize="22sp"/>
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rgStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RadioButton
+            android:id="@+id/rbMarried"
+            android:layout_width="match_parent"
+            android:text="Married"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:textSize="22sp"/>
+
+        <RadioButton
+            android:id="@+id/rbUnmarried"
+            android:layout_width="match_parent"
+            android:text="Unmarried"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:textSize="22sp"/>
+
+    </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Education Details"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"/>
+
+        <EditText
+            android:id="@+id/edt10Percentage"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:hint="Please Enter Your 10th Percentage"
+            android:padding="10dp"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/edt12Percentage"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:hint="Please Enter Your 12th Percentage"
+            android:padding="10dp"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/edtFPercentage"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:hint="Please Enter Your Final Year Percentage"
+            android:padding="10dp"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/edt10Pass"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:hint="Please Enter Your 10th Pass Year"
+            android:padding="10dp"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/edt12Pass"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:hint="Please Enter Your 12th Pass Year"
+            android:padding="10dp"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/edtCPass"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:hint="Please Enter Your Collage Pass Year"
+            android:padding="10dp"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description:"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edtExperience"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_height="50dp"
+            android:hint="Please Enter Your Job Experience"
+            android:padding="10dp"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="Interest Area"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/edtFuture"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:hint=" Enter Your Future Goal"
+            android:padding="10dp"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="Skill Area"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:weightSum="3">
+
+            <CheckBox
+                android:id="@+id/chkC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C"
+                android:layout_weight="1"
+                android:textSize="22sp"/>
+
+            <CheckBox
+                android:id="@+id/chkCPlus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C++"
+                android:layout_weight="1"
+                android:textSize="22sp"/>
+
+            <CheckBox
+                android:id="@+id/chkJava"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JAVA"
+                android:layout_weight="1"
+                android:textSize="22sp"/>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3">
+
+                <CheckBox
+                    android:id="@+id/chkAndroid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ANDROID"
+                    android:layout_weight="1"
+                    android:textSize="22sp"/>
+
+                <CheckBox
+                    android:id="@+id/chkKotlin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KOTLIN"
+                    android:layout_weight="1"
+                    android:textSize="22sp"/>
+
+                <CheckBox
+                    android:id="@+id/chkPhp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PHP"
+                    android:layout_weight="1"
+                    android:textSize="22sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3">
+
+            <CheckBox
+                android:id="@+id/chkHtml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HTML"
+                android:layout_weight="1"
+                android:textSize="22sp"/>
+
+            <CheckBox
+                android:id="@+id/chkCss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CSS"
+                android:layout_weight="1"
+                android:textSize="22sp"/>
+
+            <CheckBox
+                android:id="@+id/chkWeb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WEBDESIGN"
+                android:layout_weight="1"
+                android:textSize="22sp"/>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="SUBMIT"
+            android:textSize="25sp"
+            android:layout_marginTop="60dp"/>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
